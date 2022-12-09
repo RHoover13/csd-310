@@ -22,7 +22,7 @@ try:
             "group by customer_id, purchase_date order by customer_id"
     cursor.execute(query)
     results = cursor.fetchall()
-    print(" -- DISPLAYING Purchases from 2021-01-01 to 2022-12-31 --")
+    print(" -- DISPLAYING Purchases --")
 
     for purchases in results:
         print("\nCustomer ID:", purchases[0])
