@@ -4,7 +4,7 @@ from pymysql import err
 
 config = {
     "user": "root",
-    "password": "Laura0413!",
+    "password": "**********",
     "host": "127.0.0.1",
     "database": "outland_adventures",
     "raise_on_warnings": True
