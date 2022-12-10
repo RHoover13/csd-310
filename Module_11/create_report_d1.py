@@ -1,10 +1,12 @@
+from datetime import datetime
+
 import mysql.connector
 from mysql.connector import errorcode
 from pymysql import err
 
 config = {
     "user": "root",
-    "password": "**********",
+    "password": "Laura0413!",
     "host": "127.0.0.1",
     "database": "outland_adventures",
     "raise_on_warnings": True
@@ -22,7 +24,9 @@ try:
             "group by customer_id, purchase_date order by customer_id"
     cursor.execute(query)
     results = cursor.fetchall()
+    now = datetime.now()
     print(" -- DISPLAYING Purchases --")
+    print("\n Time of report: ", now)
 
     for purchases in results:
         print("\nCustomer ID:", purchases[0])
